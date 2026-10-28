@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iggie2002-inferobs_jd373"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告模型服务可观测性工程师·GPU 故障与作业自愈相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "iggie2002" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://iggie2002.github.io"
+Repository = "https://github.com/iggie2002/inferobs_jd373"
+Issues = "https://github.com/iggie2002/inferobs_jd373/issues"
+
+[project.scripts]
+inferobs_jd373 = "inferobs_jd373:main"
+
+[tool.setuptools]
+py-modules = ["inferobs_jd373"]
